@@ -24,9 +24,9 @@ After solving the problem, you can install `mysqlclient` successfully.
 3. Manipulate on MySQL
 ```python
 import MySQLdb
+def changeMySQL(queryList, dbArg):
 # queryList: string list of sql querys
 # dbArg: arguments for database connection, including Host, User, Password, and Database Name.
-def changeMySQL(queryList, dbPara):
     connection = MySQLdb.connect(
         host   = dbArg["MySQL_Host"],
         user   = dbArg["MySQL_User"],
