@@ -6,7 +6,7 @@
 3. Install Visual Studio C++ (better be the newest version).
 
 ## 2 Install MySQLdb
-1. Try to install 'mysqlclient', According to [How to install Python MySQLdb module using pip?](https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip), `pip` can be used in windows command line:
+1. Try to install 'mysqlclient',. According to [How to install Python MySQLdb module using pip?](https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip), you can use `pip` in command line:
 ```cmd
 pip install mysqlclient
 ```
