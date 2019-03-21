@@ -19,7 +19,7 @@ pip install mysqlclient
 ```cmd
 pip install "path to the downloaded .whl file"
 ```
-After solving the problem, you can install `mysqlclient`.
+After solving the problem, you can install `mysqlclient` successfully.
 
 3. Manipulate on MySQL
 ```python
