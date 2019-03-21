@@ -3,7 +3,7 @@
 ## 1 Before All
 1. Suppose you are using Python37 on windows. (other versions are also ok mostly.)
 2. Install MySQL and make connection to the database you want to manipulate.
-3. Install Visual Studio C++ (at least in version of 2014).
+3. Install Visual Studio C++ (better be the newest version).
 
 ## 2 Install MySQLdb
 1. Try to install 'mysqlclient', According to [How to install Python MySQLdb module using pip?](https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip), `pip` can be used in windows command line:
