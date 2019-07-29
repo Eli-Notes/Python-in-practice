@@ -1,3 +1,9 @@
+''
+This file is to get all contents of open market operations announcement of China People's Bank.
+Presetting: 'chrome driver' should be downloaded from chorme official website and the exe file should be added into system path.
+'''
+
+
 # presetting
 import requests, re, time, pickle, datetime
 import numpy as np
@@ -7,6 +13,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+
+# global constant
 GC = {
     "number_of_pages_in_bulletin": 99,
     'url_open_market_trade_bulletin': 'http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/17081/index1.html',
@@ -14,13 +23,14 @@ GC = {
     'urls_open_market_trade_announcement': [],
     'request': [],
     'flag_generate_request': True,
-    'flag_get_all_announcement_links': False,
+    'flag_get_all_announcement_links': True,
     'maximum_request_interval_in_seconds': 0.2,
     'xpath_page_content': '//*[@id="zoom"]',
-    "restartpoint": 0
+    "restartpoint": 0 # to prevent cookies are too old to use.
 }
 
-# generate request with right cookies and header
+
+# generate request session with right cookies and header, using 'selenium' with 'chrome driver'.
 if GC[ 'flag_generate_request']:
     def generate_request(GC):
         # open browser
