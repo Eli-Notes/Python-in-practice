@@ -61,6 +61,7 @@ else:
         GC_save = pickle.load(f)
     GC['request'] = GC_save['request']
 
+
 # get all announcement links and save
 if GC['flag_get_all_announcement_links']:
     def extract_announcement_links_in_this_page(GC, url_this_bulletin_page):
@@ -91,6 +92,7 @@ else:
     with open('GC.pickle', 'rb') as f:
         GC_save = pickle.load(f)
     GC['urls_open_market_trade_announcement'] = GC_save['urls_open_market_trade_announcement']
+
 
 # get all announcement
 def process_str(text):
@@ -123,8 +125,14 @@ for i in range(num)[GC["restartpoint"]:]:
         df_temp = pd.DataFrame(data)
         df_output = pd.concat([df_output,df_temp], axis=0, join="outer")
     except:
-        print("Attention! Somthing wrong with range id ", i, url)
+        print("Attention! Somthing wrong with range num ", i, '\n',
+              "The url is ", url, "\n",
+              'Data up to here are saved in new excel.',
+              'Please restart the program with GC["restartpoint"] =', i)
         break
+
+
+# output
 df_output["日期"] = pd.to_datetime(df_output["日期"]).dt.date
 df_output = df_output.set_index("日期")
 df_output = df_output.sort_index(ascending=False)
