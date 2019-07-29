@@ -138,4 +138,4 @@ df_output = df_output.set_index("日期")
 df_output = df_output.sort_index(ascending=False)
 file_name = "OMO_announcement_pbc_" + datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + ".xlsx"
 df_output.to_excel(file_name)
-print("All completed! File saved!")
+print("Completed! File saved!")
