@@ -1,11 +1,11 @@
-# Process: 
-1. DWFE: done.
-2. Waiting...
+# PROCESS 
+# 1. DWFE: done.
+# 2. Waiting...
 
 # PLOT FOR TIME SEIRES
 import matplotlib.pyplot as plt
 from pandas.plotting import register_matplotlib_converters
-register_matplotlib_converters()  ### Why do this???
+register_matplotlib_converters()  ### Why so???
 
 ## single plot
 fig, ax = plt.subplots(1, 1)
