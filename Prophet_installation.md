@@ -1,4 +1,4 @@
-# 1 Installation prophet
+# Prophet Installation
 Setting:windows 10, anaconda 3, python 3, 2019 Jul
 1. Attempted to pip isntall fbprophet, but got this:
   `pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available`
