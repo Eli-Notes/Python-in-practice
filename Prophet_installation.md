@@ -1,5 +1,5 @@
 # Prophet Installation
-Setting:windows 10, anaconda 3, python 3, 2019 Jul
+Setting: windows 10, anaconda 3, python 3, 2019 Aug
 1. Pip installation gets
   `pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available`.  
   Solution: [stackoverflow](https://stackoverflow.com/questions/45954528/pip-is-configured-with-locations-that-require-tls-ssl-however-the-ssl-module-in). But Pip installation still collapses for other reasons.
