@@ -7,3 +7,6 @@ df_output = df.loc[boolean_index] # or df[boolean_index]
 
 # find the index of nan in ndarray
 np.argwhere(np.isnan(data))
+
+# remove nan from an numpy array
+x = x[~numpy.isnan(x)]
